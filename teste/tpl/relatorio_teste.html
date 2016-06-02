@@ -1,0 +1,12 @@
+<script>
+	janela_relatorio('{id}');
+	$(function() {$(".j{id}").resizable();});
+</script>
+<div id="relatorio" class="j{id}">
+	<div id="titulo">Receituário de controle especial<a href="javascript:fechar('j{id}')" class="fechar"><i class="fa fa-times"></i></a></div>
+	<div id="opcoes">
+		<a href="javascript:window.frames['relatorio{id}'].print();"><i class="fa fa-print"></i></a>
+		<a href="javascript:salvar_relatorio('teste','','teste');"><i class="fa fa-floppy-o"></i></a>
+	</div>
+	<iframe width="970" height="450" src="?pg=relatorio_teste_imprimir&md=teste" name="relatorio{id}"></iframe>
+</div>
